@@ -28,7 +28,7 @@ function Intro({}: IntroProps) {
               quality={95}
               priority={true}
               alt="my-image"
-              className="h-24 w-24 object-cover rounded-full shadow-xl border-[0.35rem] border-white"
+              className="h-24 w-24 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
             />
           </motion.div>
           <motion.span
@@ -40,7 +40,7 @@ function Intro({}: IntroProps) {
               delay: 0.1,
               duration: 0.7,
             }}
-            className="bottom-0 right-0 absolute text-2xl"
+            className="absolute bottom-0 right-0 text-2xl"
           >
             👋🏻
           </motion.span>
@@ -50,7 +50,7 @@ function Intro({}: IntroProps) {
       <motion.p
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        className="!leading-[1.5] mb-10 mt-4 px-4 text-2xl font-medium sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
       >
         <span className="font-bold">Hello, I'm Karan,</span> a passionate{" "}
         <span className="font-bold">full-stack engineer </span>
@@ -59,20 +59,20 @@ function Intro({}: IntroProps) {
         <span className="underline">Web Development (JavaScript)</span>.
       </motion.p>
 
-      <div className="flex flex-col sm:flex-row justify-center items-center">
+      <div className="flex flex-col items-center justify-center sm:flex-row">
         <Link
           href="#contact"
-          className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full"
+          className="flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white"
         >
           Contact me here <BsArrowRight />
         </Link>
-        <a className="bg-white px-7 py-3 flex items-center gap-2 rounded-full">
+        <a className="flex items-center gap-2 rounded-full bg-white px-7 py-3">
           Download CV <HiDownload />
         </a>
-        <a className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full">
+        <a className="flex items-center gap-2 rounded-full bg-white p-4 text-gray-700">
           <BsLinkedin />
         </a>
-        <a className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full">
+        <a className="flex items-center gap-2 rounded-full bg-white p-4 text-gray-700">
           <FaGithubSquare />
         </a>
       </div>
