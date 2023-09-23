@@ -13,7 +13,10 @@ type IntroProps = {};
 
 function Intro({}: IntroProps) {
   return (
-    <section className=" mb-28 max-w-[52rem] text-center sm:mb-0">
+    <section
+      id={"home"}
+      className="mb-28 max-w-[52rem] scroll-mt-[100rem] text-center sm:mb-0"
+    >
       <div className="flex flex-row items-center justify-center">
         <div className="relative">
           <motion.div

@@ -63,15 +63,27 @@ export const projectsData = [
   {
     title: "Minesweeper",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "Recreated the classic Minesweeper with a modern UI and engaging animations using React.",
+    tags: [
+      "React.js",
+      "JavaScript",
+      "HTML",
+      "Cascading Style Sheets (CSS)",
+      "React Hooks",
+    ],
     imageUrl: mineSweeperImg,
   },
   {
     title: "Movies App",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Designed and implemented a Movies Database Application with a range of features for seamless movie browsing.",
+    tags: [
+      "React.js",
+      "JavaScript",
+      "HTML",
+      "Cascading Style Sheets (CSS)",
+      "React Hooks",
+    ],
     imageUrl: moviesAppImg,
   },
 ] as const;
