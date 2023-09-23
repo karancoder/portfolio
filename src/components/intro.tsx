@@ -1,20 +1,23 @@
 "use client";
 
-import React from "react";
 import MyImage from "@/../public/my-image.png";
-import Image from "next/image";
+import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { HiDownload } from "react-icons/hi";
 
 type IntroProps = {};
 
 function Intro({}: IntroProps) {
+  const { ref } = useSectionInView({ sectionName: "Home" });
+
   return (
     <section
       id={"home"}
+      ref={ref}
       className="mb-28 max-w-[52rem] scroll-mt-[100rem] text-center sm:mb-0"
     >
       <div className="flex flex-row items-center justify-center">

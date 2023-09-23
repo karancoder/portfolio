@@ -9,7 +9,8 @@ import Link from "next/link";
 type HeaderProps = {};
 
 export default function Header({}: HeaderProps) {
-  const { activeSection, setActiveSection } = useActiveSectionContext();
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
 
   return (
     <header className="relative z-[999]">
@@ -28,7 +29,10 @@ export default function Header({}: HeaderProps) {
               animate={{ y: 0, opacity: 1 }}
             >
               <Link
-                onClick={() => setActiveSection(link.name)}
+                onClick={() => {
+                  setActiveSection(link.name);
+                  setTimeOfLastClick(Date.now());
+                }}
                 href={link.hash}
                 className={classNames(
                   "flex flex-row items-center justify-center px-3 py-3 transition hover:text-gray-950",
