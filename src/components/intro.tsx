@@ -90,7 +90,7 @@ function Intro({}: IntroProps) {
         </Link>
 
         <a
-          className="borderBlack group flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 transition hover:scale-110 focus:scale-110 active:scale-105"
+          className="borderBlack group flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 transition hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10"
           href="/MyResume.pdf"
           download
         >
@@ -100,7 +100,7 @@ function Intro({}: IntroProps) {
 
         <a
           href="https://www.linkedin.com/in/karanjivani01"
-          className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105"
+          className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
           target="_blank"
         >
           <BsLinkedin />
@@ -108,7 +108,7 @@ function Intro({}: IntroProps) {
 
         <a
           href="https://github.com/karancoder"
-          className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105"
+          className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
           target="_blank"
         >
           <FaGithubSquare />
