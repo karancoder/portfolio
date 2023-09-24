@@ -36,7 +36,7 @@ function Skills({}: SkillsProps) {
         {skillsData.map((skill, index) => (
           <motion.li
             className={
-              "rounded-xl border border-black/[0.1] bg-white px-5 py-3"
+              "rounded-xl border border-black/[0.1] bg-white px-5 py-3 dark:bg-white/10 dark:text-white/80"
             }
             variants={fadeInAnimationVariants}
             initial={"initial"}
