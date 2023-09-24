@@ -1,6 +1,7 @@
 "use client";
 
 import MyImage from "@/../public/my-image.png";
+import { useActiveSectionContext } from "@/context/active-section-context";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -13,6 +14,8 @@ type IntroProps = {};
 
 function Intro({}: IntroProps) {
   const { ref } = useSectionInView({ sectionName: "Home" });
+
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
@@ -76,6 +79,10 @@ function Intro({}: IntroProps) {
       >
         <Link
           href="#contact"
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
           className="group flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white outline-none transition hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105"
         >
           Contact me here{" "}
@@ -83,7 +90,7 @@ function Intro({}: IntroProps) {
         </Link>
 
         <a
-          className="group flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white px-7 py-3 transition hover:scale-110 focus:scale-110 active:scale-105"
+          className="borderBlack group flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 transition hover:scale-110 focus:scale-110 active:scale-105"
           href="/MyResume.pdf"
           download
         >
@@ -93,7 +100,7 @@ function Intro({}: IntroProps) {
 
         <a
           href="https://www.linkedin.com/in/karanjivani01"
-          className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105"
+          className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105"
           target="_blank"
         >
           <BsLinkedin />
@@ -101,7 +108,7 @@ function Intro({}: IntroProps) {
 
         <a
           href="https://github.com/karancoder"
-          className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105"
+          className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105"
           target="_blank"
         >
           <FaGithubSquare />
