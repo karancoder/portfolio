@@ -23,7 +23,7 @@ function Contact({}: ContactProps) {
       viewport={{ once: true }}
     >
       <SectionHeading>Contact Me</SectionHeading>
-      <p className="-mt-6 text-gray-700">
+      <p className="-mt-6 text-gray-700 dark:text-white/80">
         Please contact me directly at{" "}
         <a href="mailto:jivanikaran@gmail.com" className="underline">
           jivanikaran@gmail.com
@@ -32,7 +32,7 @@ function Contact({}: ContactProps) {
       </p>
 
       <form
-        className="mt-10 flex flex-col"
+        className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
 
@@ -50,14 +50,14 @@ function Contact({}: ContactProps) {
           placeholder="Your email"
           required={true}
           maxLength={500}
-          className="borderBlack h-14 rounded-lg px-4"
+          className="borderBlack h-14 rounded-lg px-4 transition-all dark:bg-white dark:bg-opacity-80 dark:outline-none dark:focus:bg-opacity-100"
         />
         <textarea
           required={true}
           name="message"
           maxLength={5000}
           placeholder="Your message"
-          className="borderBlack my-3 h-52 rounded-lg p-4"
+          className="borderBlack my-3 h-52 rounded-lg p-4 transition-all dark:bg-white dark:bg-opacity-80 dark:outline-none dark:focus:bg-opacity-100"
         />
         <SubmitBtn />
       </form>
