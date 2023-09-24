@@ -8,11 +8,13 @@ import {
 } from "react-vertical-timeline-component";
 import { useSectionInView } from "@/lib/hooks";
 import { experiencesData } from "@/lib/data";
+import { useThemeContext } from "@/context/theme-context";
 
 type ExperienceProps = {};
 
 function Experience({}: ExperienceProps) {
   const { ref } = useSectionInView({ sectionName: "Experience" });
+  const { theme } = useThemeContext();
 
   return (
     <section className="mb-28 scroll-mt-28 sm:mb-40" id="experience" ref={ref}>
@@ -22,7 +24,8 @@ function Experience({}: ExperienceProps) {
           <React.Fragment key={index}>
             <VerticalTimelineElement
               contentStyle={{
-                background: "#f3f4f6",
+                background:
+                  theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
                 boxShadow: "none",
                 border: "1px solid rgba(0, 0, 0, 0.05)",
                 textAlign: "left",
