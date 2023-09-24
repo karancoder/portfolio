@@ -34,28 +34,36 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "B.Tech ICT (with CS), DA-IICT",
+    location: "Gandhinagar, IN",
     description:
       "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
     icon: React.createElement(LuGraduationCap),
     date: "2019",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "M.Tech CSE, IIT Madras",
+    location: "Chennai, IN",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2021",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Software Engineer, Cisco Systems",
+    location: "Bangalore, IN",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I worked as Software Engineer on developing scalable Cloud Native Firewalls (STS in SFCN). My stack included Python, Go, Docker, Kubernetes and AWS.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2021 - 2022",
+  },
+  {
+    title: "Software Engineer, Leap Wallet",
+    location: "Remote, IN",
+    description:
+      "I am currently working as Software Engineer in Leap Wallet, where I am leading the development of Leapboard, all-in-one dashboard for cosmos wallets. My stack includes React, TypeScript, REST APIs, GraphQL, and Tailwind.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2022 - present",
   },
 ] as const;
 
