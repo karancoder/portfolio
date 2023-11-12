@@ -3,6 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import mineSweeperImg from "@/../public/minesweeper.png";
+import communiChatImg from "@/../public/communi-chat.png";
 import moviesAppImg from "@/../public/movies-app.png";
 
 export const links = [
@@ -68,6 +69,13 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Discord Clone",
+    description:
+      "Discord Clone with features like servers management, real-time messaging using sockets.io with fallback to polling, audio/video calls and many more!",
+    tags: ["Nextjs", "React.js", "sockets.io", "postgresql", "prisma"],
+    imageUrl: communiChatImg,
+  },
   {
     title: "Minesweeper",
     description:
